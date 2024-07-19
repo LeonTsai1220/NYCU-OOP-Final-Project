@@ -5,6 +5,7 @@
 #include "bit_field_filter.h"
 
 int main(int argc, char *argv[]){
+    printf("hello world")
     Image *img1 = new GrayImage();
     img1->LoadImage("Image-Folder/mnist/img_100.jpg");
     img1->DumpImage("img1.jpg");
