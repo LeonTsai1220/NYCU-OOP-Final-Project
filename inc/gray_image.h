@@ -14,7 +14,8 @@ class GrayImage : public Image{
         void DumpImage(string filename)override;
         void Display_X_server()override;
         void Display_ASCII()override;
-        void Display_CMD() override;
+        void Display_CMD(string filename) override;
+        int ** get_pixels();
         
 };
 

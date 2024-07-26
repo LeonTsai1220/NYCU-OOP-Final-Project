@@ -9,12 +9,13 @@ class Image{
         static Data_Loader data_loader;
     public:
         Image(int w, int h);
+        Image();
         ~Image();
         virtual bool LoadImage(string filename) = 0;
         virtual void DumpImage(string filename) = 0;
         virtual void Display_X_server() = 0;
         virtual void Display_ASCII() = 0;
-        virtual void Display_CMD() = 0;
+        virtual void Display_CMD(string filename) = 0;
         int get_width();
         int get_height();
 };
