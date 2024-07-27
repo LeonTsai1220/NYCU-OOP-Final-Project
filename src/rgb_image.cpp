@@ -31,3 +31,7 @@ void RGBImage::Display_ASCII(){
 void RGBImage::Display_CMD(string filename){
     data_loader.Display_RGB_CMD(filename);
 }
+
+int*** RGBImage::get_pixels(){
+    return pixels;
+}

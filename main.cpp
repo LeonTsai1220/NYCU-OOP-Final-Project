@@ -26,12 +26,13 @@ int main(int argc, char *argv[]){
     img2->Display_X_server();
     img2->Display_ASCII();
     //img2->Display_CMD();
-    
-    Data_Loader data_loader;
-    int **pixels1 = box_filter(img1, 3);
-    data_loader.Dump_Gray(img1->get_width(), img1->get_height(), pixels1, string("pixels1.jpg"));
-    data_loader.Display_Gray_X_Server(img1->get_width(), img1->get_height(), pixels1);
-    
+    cout << "box filter" << endl;
+    Image *img3 = new RGBImage();
+    //img3->LoadImage("Image-Folder/mnist/img_99.jpg");
+    img3 = box_filter(img2, 5);
+    cout << "dump img3" << endl;
+    img3->DumpImage("img3.jpg");
+    img3->Display_X_server();
     // some bit field filter design driven code here
 
     // some photo mosaic driven code here

@@ -16,6 +16,7 @@ class RGBImage : public Image{
         void Display_X_server();
         void Display_ASCII();
         void Display_CMD(string filename);
+        int*** get_pixels();
         
 };
 #endif
